@@ -14,7 +14,7 @@ RUN curl -s --create-dirs -L https://raw.githubusercontent.com/suwayomi/docker-t
 
 RUN curl -L $(curl -s https://api.github.com/repos/suwayomi/tachidesk-server/releases/latest | grep -o "https.*jar") -o /home/suwayomi/startup/tachidesk_latest.jar
 
-COPY ..
+COPY . .
 
 EXPOSE 4567
 
